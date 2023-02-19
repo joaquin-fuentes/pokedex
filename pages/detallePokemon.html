@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Detalle Pokemon" />
+    <meta name="keywords" content="pokemon, tipos, detalle" />
+    <meta name="author" content="Mauro Diaz Santilli, Fuentes Joaquin Alberto" />
+    <meta name="keywords" content="informacion, trivia, datos, Pokemon" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>PokeDex</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar bg-danger navbar-dark navbar-expand-md">
+        <div class="container">
+          <a href="../index.html" class="navbar-brand">PokeDex</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#itemsNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                  <li><a class="dropdown-item" href="#">Enciclopedia</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar un pokemón"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-danger border-white" type="submit">
+                <i class="bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container-fluid">
+        <div id="carouselPokemon" class="carousel carousel-dark slide my-4">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselPokemon"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselPokemon"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselPokemon"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active img-fluid"
+              data-bs-interval="10000"
+            >
+              <img
+                src="../img/carousel/pokelogo.png"
+                class="d-block w-100 banner-responsive"
+                alt="Logo Pokemon"
+              />
+            </div>
+            <div class="carousel-item img-fluid" data-bs-interval="2000">
+              <img
+                src="../img/carousel/pokeballm.gif"
+                class="d-block w-100 banner-responsive"
+                alt="Pokebola"
+              />
+            </div>
+            <div class="carousel-item img-fluid">
+              <img
+                src="../img/carousel/pokedex.jpeg"
+                class="d-block w-100 banner-responsive"
+                alt="Iustracion pokedex"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselPokemon"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselPokemon"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+      <section class="container-fluid container-md w-100 my-4">
+        <div class="card">
+            <div class="card-body">
+              <h2 class="card-title text-center">Bulbasaur <span class="text-secondary">N.°001</span></h2>
+              <article class="row my-4">
+                <aside class="col-12 col-lg-6">  
+                    <img src="../img/001.png" alt="Imagen de bolbasaur" class="w-100">
+                </aside>
+                <aside class="col-12 col-lg-6">  
+                    <section class="my-4">                   
+                         <h5 class="text-secondary">Este Pokémon nace con una semilla en el lomo, que brota con el paso del tiempo</h5>
+                    </section>
+                    <section class="card text-bg-primary mb-3">
+                        <div class="card-header"><h6 class="m-0 p-6">Version</h6></div>
+                        <div class="card-body">
+                            <div class="row">
+                                <aside class="col-6">
+                                    <h6>Altura</h6>
+                                    <p class="fs-6">0,7 m</p>
+                                </aside>
+                                <aside class="col-6">
+                                    <h6>Categoría</h6>
+                                    <p class="fs-6">Semilla</p>
+                                </aside>
+                                <aside class="col-6">
+                                    <h6>Peso</h6>
+                                    <p class="fs-6">6,9 kg</p>
+                                </aside>
+                                <aside class="col-6">
+                                    <h6>Habilidad</h6>
+                                    <p class="fs-6">Espesura</p>
+                                </aside>
+                                <aside class="col-6">
+                                    <i class="bi bi-gender-male"></i>
+                                    <i class="bi bi-gender-female"></i>
+                                </aside>
+                            </div>
+                        </div>
+                      </section>
+                      <section>
+                            <h5 class="mt-4">Tipo</h5>
+                            <span class="fs-6 bg-success text-light p-2 rounded-pill">Planta</span>
+                            <span class="fs-6 bg-veneno text-light p-2 rounded-pill">Veneno</span>
+                            <h5 class="mt-4">Debilidad</h5>
+                            <span class="fs-6 bg-fuego text-light p-2 rounded-pill">Fuego</span>
+                            <span class="fs-6 bg-psiquico text-light p-2 rounded-pill">Psíquico</span>
+                            <span class="fs-6 bg-dark text-light p-2 rounded-pill">Volador</span>
+                            <span class="fs-6 bg-info text-light p-2 rounded-pill">Hielo</span>
+                      </section>
+                </aside>
+              </article>
+              <article class="row bg-secondaryEdit pt-3  ">
+                <h2 class="col-12">Evoluciones</h2>
+                <div class="row my-4">
+                    <article class="col-12 col-md-4 col-lg-4">
+                        <img src="../img/001.png" alt="Imagen de bolbasaur" class="w-100">
+                        <h5 class="card-title text-center text-lg-start">Bulbasaur <span class="text-secondary">N.°001</span></h5>
+                        <div class="text-center text-lg-start">
+                            <span class="fs-6 bg-success text-light p-2 rounded-pill ">Planta</span>
+                            <span class="fs-6 bg-veneno text-light p-2 rounded-pill ">Veneno</span>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4 col-lg-4">
+                        <img src="../img/002.png" alt="Imagen de bolbasaur" class="w-100">
+                        <h5 class="card-title text-center text-lg-start">Ivysaur <span class="text-secondary">N.°002</span></h5>
+                          <div class="text-center text-lg-start">
+                            <span class="fs-6 bg-success text-light p-2 rounded-pill ">Planta</span>
+                            <span class="fs-6 bg-veneno text-light p-2 rounded-pill ">Veneno</span>
+                        </div>
+                    </article>
+                    <article class="col-12 col-md-4 col-lg-4">
+                        <img src="../img/003.png" alt="Imagen de bolbasaur" class="w-100">
+                        <h5 class="card-title text-center text-lg-start">Venusaur <span class="text-secondary">N.°003</span></h5>
+                          <div class="text-center text-lg-start">
+                            <span class="fs-6 bg-success text-light p-2 rounded-pill ">Planta</span>
+                            <span class="fs-6 bg-veneno text-light p-2 rounded-pill ">Veneno</span>
+                        </div>
+                    </article>
+                </div>
+              </article>
+            </div>
+          </div>
+
+      </section>
+    </main>
+    <footer class="bg-dark text-light text-center py-4 mt-auto">
+      <p>&copy;Todos los derechos reservados</p>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

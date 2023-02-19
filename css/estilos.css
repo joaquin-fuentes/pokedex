@@ -11,11 +11,27 @@ header, main, footer{
 }
 
 .carousel .carousel-item {
-    height: 500px;
+    height: 80%;
   }
   
   .carousel-item img {
     object-fit: scale-down;
     height: 50vh;
     width: 100%;
+  }
+
+
+  /* DetallesPokemon */
+
+  .bg-veneno{
+    background-color: blueviolet;
+  }
+  .bg-fuego{
+    background-color: orange;
+  }
+  .bg-psiquico{
+    background-color: deeppink;
+  }
+  .bg-secondaryEdit{
+    background-color: rgb(173, 173, 173);
   }

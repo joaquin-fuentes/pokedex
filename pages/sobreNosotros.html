@@ -10,19 +10,20 @@
     <meta name="author" content="Mauro Diaz Santilli" />
     <meta name="author" content="Navarro Leandro" />
     <meta name="keywords" content="informacion, trivia, datos, Pokemon" />
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
     />
+    <link rel="icon" type="image/png" href="../img/Poké_Ball_icon.svg.png">
     <title>PokeDex</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header>
       <nav class="navbar bg-danger navbar-dark navbar-expand-md">
         <div class="container">
-          <a href="index.html" class="navbar-brand">PokeDex</a>
+          <a href="../index.html" class="navbar-brand">PokeDex</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -70,76 +71,53 @@
       </nav>
     </header>
     <main>
-      <section class="container-fluid">
-        <div id="carouselPokemon" class="carousel carousel-dark slide my-4">
-          <div class="carousel-indicators">
-            <button
-              type="button"
-              data-bs-target="#carouselPokemon"
-              data-bs-slide-to="0"
-              class="active"
-              aria-current="true"
-              aria-label="Slide 1"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselPokemon"
-              data-bs-slide-to="1"
-              aria-label="Slide 2"
-            ></button>
-            <button
-              type="button"
-              data-bs-target="#carouselPokemon"
-              data-bs-slide-to="2"
-              aria-label="Slide 3"
-            ></button>
-          </div>
-          <div class="carousel-inner">
-            <div
-              class="carousel-item active img-fluid"
-              data-bs-interval="10000"
-            >
-              <img
-                src="img/carousel/pokelogo.png"
-                class="d-block w-100 banner-responsive"
-                alt="Logo Pokemon"
-              />
+        <div class="container">
+            <h1>Sobre Nosotros</h1>
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <img src="../img/WhatsApp Image 2023-02-19 at 22.48.13.jpeg" alt="Mauro Diaz Santilli">
+                  <div class="card-overlay">
+                    <h2>Mauro Diaz Santilli</h2>
+                    <p>Mauro Diaz Santilli, 26 años. Estudiante de Inglés y Profesor particular de Inglés y Francés. 
+                        Aficionado de impresión 3D. Me gustan la natación, el café y las comedias</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="../img/WhatsApp Image 2023-02-19 at 23.01.50.jpeg" alt="Anthony Hildebrand">
+                  <div class="card-overlay">
+                    <h2>Anthony Hildebrand</h2>
+                    <p>Anthony Ariel Hildebrand, 17 años estudiante de inglés, electrónica y programación. 
+                        Me gustan los juegos online, el fútbol y la napolitana con papas.</p>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="carousel-item img-fluid" data-bs-interval="2000">
-              <img
-                src="img/carousel/pokeballm.gif"
-                class="d-block w-100 banner-responsive"
-                alt="Pokebola"
-              />
-            </div>
-            <div class="carousel-item img-fluid">
-              <img
-                src="img/carousel/pokedex.jpeg"
-                class="d-block w-100 banner-responsive"
-                alt="Iustracion pokedex"
-              />
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <img src="../img/WhatsApp Image 2023-02-19 at 23.02.27.jpeg" alt="Joaquin Fuentes">
+                  <div class="card-overlay">
+                    <h2>Joaquin Fuentes</h2>
+                    <p>Joaquin Fuentes, 29 años, estudio programación en la UTN. 
+                        Me gusta la música y el deporte. Fan de juego de tronos y los simpsons.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="../img/Leandro Navarro.jpeg" alt="Navarro Leandro">
+                  <div class="card-overlay">
+                    <h2>Navarro Leandro</h2>
+                    <p>Leandro Navarro, 25 años, estudiante avanzado de ingeniería biomedica, técnico electromecanico, músico independiente, 
+                        sesionista y productor.</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselPokemon"
-            data-bs-slide="prev"
-          >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-          </button>
-          <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselPokemon"
-            data-bs-slide="next"
-          >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-          </button>
-        </div>
-      </section>
     </main>
     <footer class="bg-dark text-light text-center py-4 mt-auto">
       <p>&copy;Todos los derechos reservados</p>

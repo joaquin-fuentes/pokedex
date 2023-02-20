@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Enciclopedia Pokemon" />
+    <meta name="keywords" content="pokemon, tipos" />
+    <meta name="author" content="Joaquin Fuentes" />
+    <meta name="author" content="Mauro Diaz Santilli" />
+    <meta name="author" content="Navarro Leandro" />
+    <meta name="keywords" content="informacion, trivia, datos, Pokemon" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <title>PokeDex</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar bg-danger navbar-dark navbar-expand-md">
+        <div class="container">
+          <a href="index.html" class="navbar-brand">PokeDex</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#itemsNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                  <li><a class="dropdown-item" href="#">Enciclopedia</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar un pokemón"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-danger border-white" type="submit">
+                <i class="bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="container-fluid">
+        <div id="carouselPokemon" class="carousel carousel-dark slide my-4">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselPokemon"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselPokemon"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselPokemon"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div
+              class="carousel-item active img-fluid"
+              data-bs-interval="10000"
+            >
+              <img
+                src="img/carousel/pokelogo.png"
+                class="d-block w-100 banner-responsive"
+                alt="Logo Pokemon"
+              />
+            </div>
+            <div class="carousel-item img-fluid" data-bs-interval="2000">
+              <img
+                src="img/carousel/pokeballm.gif"
+                class="d-block w-100 banner-responsive"
+                alt="Pokebola"
+              />
+            </div>
+            <div class="carousel-item img-fluid">
+              <img
+                src="img/carousel/pokedex.jpeg"
+                class="d-block w-100 banner-responsive"
+                alt="Iustracion pokedex"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselPokemon"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselPokemon"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer class="bg-dark text-light text-center py-4 mt-auto">
+      <p>&copy;Todos los derechos reservados</p>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

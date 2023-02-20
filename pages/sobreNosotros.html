@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Enciclopedia Pokemon" />
+    <meta name="keywords" content="pokemon, tipos" />
+    <meta name="author" content="Joaquin Fuentes" />
+    <meta name="author" content="Mauro Diaz Santilli" />
+    <meta name="author" content="Navarro Leandro" />
+    <meta name="keywords" content="informacion, trivia, datos, Pokemon" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link rel="icon" type="image/png" href="../img/Poké_Ball_icon.svg.png">
+    <title>PokeDex</title>
+  </head>
+  <body class="d-flex flex-column min-vh-100">
+    <header>
+      <nav class="navbar bg-danger navbar-dark navbar-expand-md">
+        <div class="container">
+          <a href="../index.html" class="navbar-brand">PokeDex</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#itemsNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Categorias
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Enciclopedia</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="sobreNosotros.html"
+                  >Sobre Nosotros</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar un pokemón"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-danger border-white" type="submit">
+                <i class="bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1>Sobre Nosotros</h1>
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <img src="../img/WhatsApp Image 2023-02-19 at 22.48.13.jpeg" alt="Mauro Diaz Santilli">
+                  <div class="card-overlay">
+                    <h2>Mauro Diaz Santilli</h2>
+                    <p>Mauro Diaz Santilli, 26 años. Estudiante de Inglés y Profesor particular de Inglés y Francés. 
+                        Aficionado de impresión 3D. Me gustan la natación, el café y las comedias</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="../img/WhatsApp Image 2023-02-19 at 23.01.50.jpeg" alt="Anthony Hildebrand">
+                  <div class="card-overlay">
+                    <h2>Anthony Hildebrand</h2>
+                    <p>Anthony Ariel Hildebrand, 17 años estudiante de inglés, electrónica y programación. 
+                        Me gustan los juegos online, el fútbol y la napolitana con papas.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <div class="card">
+                  <img src="../img/WhatsApp Image 2023-02-19 at 23.02.27.jpeg" alt="Joaquin Fuentes">
+                  <div class="card-overlay">
+                    <h2>Joaquin Fuentes</h2>
+                    <p>Joaquin Fuentes, 29 años, estudio programación en la UTN. 
+                        Me gusta la música y el deporte. Fan de juego de tronos y los simpsons.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="../img/Leandro Navarro.jpeg" alt="Navarro Leandro">
+                  <div class="card-overlay">
+                    <h2>Navarro Leandro</h2>
+                    <p>Leandro Navarro, 25 años, estudiante avanzado de ingeniería biomedica, técnico electromecanico, músico independiente, 
+                        sesionista y productor.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </main>
+    <footer class="bg-dark text-light text-center py-4 mt-auto">
+      <p>&copy;Todos los derechos reservados</p>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -36,27 +36,29 @@ header, main, footer{
     background-color: rgb(173, 173, 173);
   }
 
+  /* Sobre nosotros */
+
   .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
   }
   
-  h1 {
+  .tituloSobreNosotros {
     text-align: center;
     color: #EE1C25;
     font-size: 5rem;
     margin-bottom: 30px;
   }
   
-  .row {
+  .rowLeandro {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 30px;
   }
   
-  .col {
+  .colLeandro {
     flex: 0 0 45%;
     margin: 15px;
     background-color: #F2F2F2;
@@ -67,17 +69,17 @@ header, main, footer{
     overflow: hidden;
   }
   
-  .col:hover {
+  .colLeandro:hover {
     transform: scale(1.05);
   }
   
-  .card {
+  .cardLeandro {
     position: relative;
     height: 0;
     padding-bottom: 100%;
   }
   
-  .card img {
+  .cardLeandro img {
     position: absolute;
     top: 0;
     left: 0;
@@ -107,11 +109,11 @@ header, main, footer{
     background-position: center;
   }
   
-  .card:hover img {
+  .cardLeandro:hover img {
     opacity: 0.5;
   }
   
-  .card:hover .card-overlay {
+  .cardLeandro:hover .card-overlay {
     opacity: 0.9;
   }
 
@@ -137,7 +139,7 @@ header, main, footer{
   }
   
   @media only screen and (max-width: 600px) {
-    .col {
+    .colLeandro {
       flex: 0 0 90%;
     }
   

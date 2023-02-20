@@ -1,5 +1,6 @@
 # Proyecto **Pokedex** Rolling Code 
 
+![pokemon](https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg)
 
 Pokedex es una página web que proporciona información detallada sobre los pokemones, incluyendo sus estadísticas, habilidades, debilidades y más. Además, también podrás encontrar información sobre la historia de los pokemones, noticias sobre próximos lanzamientos de juegos y contenido relacionado con el universo de Pokemon.
 

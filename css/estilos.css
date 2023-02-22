@@ -3,6 +3,7 @@
 * {
     margin: 0%;
     padding: 0%;
+    box-sizing: border-box;
 }
 
 header, main, footer{
@@ -151,4 +152,1807 @@ header, main, footer{
       font-size: 1rem;
     }
   }
+ /* Pagina Principal cards*/
+body{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+.button {
+    padding: 7px 15px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #049caa;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+} 
+.button:hover {background-color: #3e758e}
+  
+.button:active {
+    background-color: #3e638e;
+    box-shadow: 0 5px #666;
+    transform: translateY(3px);
+}
+li{
+    list-style:none;
+}
+.labelparacardpokemones{
+    width: 270px;
+    height: 480px;
+}
+.flip-card {
+    background-color: transparent;
+    width: 270px;
+    height: 480px;
+    perspective: 1000px;
+} 
+.flip-card-inner {
+    width: 270px;
+    margin-right: 50px;
+    position: relative;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+} 
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
+}
+.contenedor-cards{
+  margin-left: 15%;
+  margin-right: 12%;
+}
+/*CONTENIDO FRONTAL DE LA CARTA*/
+.flip-card-front {
+    background-color: #fff;
+    color: black;
+    width: 270px;
+    height: 485px;
+    border-radius: 6px;
+    transition: all 0.4s;
+    overflow: hidden;
+}
+.flip-card-front img{
+    margin-left: 0%;
+    width: 100%;
+    height: 270px;
+    max-width: 270px;
+}
+.flip-card-front .contenido{
+    padding: 15px;
+    text-align: center;
+}
+.flip-card-front:hover{
+    transform: scale(1.1);
+}
+input[type=checkbox]:checked + .flip-card-inner {
+    transform: rotateY(180deg);
+}
+input{
+    display:none ;
+}
+.tipodepokemonagua{
+    background-color: #4592c4;
+}
+.tipodepokemonplanta{
+    background-color: #9bcc50;
+}
+.tipodepokemonelectrico{
+    background-color:#EED535 ;
+}
+.tipodepokemonroca{
+    background-color:#A38C21 ;
+}
+.tipodepokemontierra{
+    background-color: #ab9842;
+    background-image: linear-gradient(0deg, #ab9842 50%, #f7de3f 51%);    
+    color: #212121;
+}
+.tipodepokemonbicho{
+    background-color: #729f3f;
+}
+.tipodepokemonnormal{
+    background-color: #a4acaf;
+}
+.tipodepokemonvolador{
+    background-color: #3dc7ef;
+    background-image: linear-gradient(0deg, #3dc7ef 50%, #bdb9b8 51%);
+    color: #212121;
+}
+.tipodepokemonfuego{
+    background-color: #fd7d24;
+}
+.tipodepokemonveneno{
+    background-color: #b97fc9;
+}   
+.card .contenido{
+    padding: 15px;
+    text-align: center;
+}
+/*CONTENIDO POSTERIOR DE LA CARTA*/
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg);
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    width: 270px;
+    height: 480px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    transition: all 400ms ease;
+    line-height: 1.7em;
+}
+#back-card{
+    background-color: #4592c4;
+    background-image: linear-gradient(160deg, #4592c4 0%, #00ffe1 100%);  
+}
+#back-card1b{
+    background-color: #729f3f;
+    background-image: linear-gradient(160deg, #b97fc9 0%, #12bc0c 80%);  
+}
+#back-card2{
+    background-color: #EED535;
+    background-image: linear-gradient(160deg, #EED535 0%, #f3a808 100%);  
+}
+#back-card3{
+    background-color: #a38c21;
+    background-image: linear-gradient(160deg, #a38c21 0%, #eb710e 100%);
+}
+#back-card3b{
+    background-color: #a38c21;
+    background-image: linear-gradient(160deg, #a38c21 0%, #729f3f 100%);
+}
+#back-card4{
+    background-color: #a4acaf;
+    background-image: linear-gradient(160deg, #a4acaf 0%, #7e7e7d 100%);
+}
+#back-card4b{
+    background-color: #a4acaf;
+    background-image: linear-gradient(160deg, #a4acaf 35%, #3dc7ef 65%);
+}
+#back-card5{
+    background-color: #fd7d24;
+    background-image: linear-gradient(160deg, #fd7d24 0%, #ea2d07 100%);
+}
+#back-card6{
+    background-color: #729f3f;
+    background-image: linear-gradient(160deg, #729f3f 0%, #0f570492 100%);
+}
+#back-card6b{
+    background-color: #729f3f;
+    background-image: linear-gradient(160deg, #729f3f 0%, #b97fc9 100%);
+}
+.puntosbasebadge{
+    margin-left:2% ;
+}
+/*CONTENIDO BARRAS DE PUNTOS*/
+.contenedor-barra{
+    margin: 15px auto;
+    width: 250px;
+}
+@keyframes progressAnimationStrike-b2{
+    from { width: 0 }
+    to   { width: 45% }
+}
+@keyframes progressAnimationStrike-b3{
+    from { width: 0 }
+    to   { width: 60% }
+}
+@keyframes progressAnimationStrike-b4{
+    from { width: 0 }
+    to   { width: 90% }
+}
+@keyframes progressAnimationStrike-b5{
+    from { width: 0 }
+    to   { width: 30% }
+}
+@keyframes progressAnimationStrike-b6{
+    from { width: 0 }
+    to   { width: 75% }
+}
+/*BARRAS DE BULBASAUR*/
+.progress-bulbasaur {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-bulbasaur {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-bulbasaur { 	
+    background-color: #118711;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #00FF00 25%, 
+        transparent 25%, transparent 50%, 
+        #00FF00 50%, #00FF00 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-bulbasaur-2 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-bulbasaur-2 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-bulbasaur-2 { 	
+    background-color: #8B0000;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #B22222 25%, 
+        transparent 25%, transparent 50%, 
+        #B22222 50%, #B22222 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-bulbasaur-3 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-bulbasaur-3 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-bulbasaur-3 { 	
+    background-color: #FFD700;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #DAA520 25%, 
+        transparent 25%, transparent 50%, 
+        #DAA520 50%, #DAA520 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-bulbasaur-4 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-bulbasaur-4 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-bulbasaur-4 { 	
+    background-color: #8B008B;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #9932CC 25%, 
+        transparent 25%, transparent 50%, 
+        #9932CC 50%, #9932CC 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+.progress-bulbasaur-5 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-bulbasaur-5 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-bulbasaur-5 { 	
+    background-color: #A0522D;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #F4A460 25%, 
+        transparent 25%, transparent 50%, 
+        #F4A460 50%, #F4A460 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+.progress-bulbasaur-6 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-bulbasaur-6 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-bulbasaur-6 { 	
+    background-color: #000080;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #7B68EE 25%, 
+        transparent 25%, transparent 50%, 
+        #7B68EE 50%, #7B68EE 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+/*BARRAS DE PSYDUCK*/
+.progress-psyduck {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-psyduck {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-psyduck { 	
+    background-color: #118711;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #00FF00 25%, 
+        transparent 25%, transparent 50%, 
+        #00FF00 50%, #00FF00 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-psyduck-2 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-psyduck-2 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-psyduck-2 { 	
+    background-color: #8B0000;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #B22222 25%, 
+        transparent 25%, transparent 50%, 
+        #B22222 50%, #B22222 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+.progress-psyduck-3 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-psyduck-3 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear; 
+}
+.progress-striped .progress-bar-animated-psyduck-3 { 	
+    background-color: #FFD700;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #DAA520 25%, 
+        transparent 25%, transparent 50%, 
+        #DAA520 50%, #DAA520 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-psyduck-4 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-psyduck-4 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-psyduck-4 { 	
+    background-color: #8B008B;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #9932CC 25%, 
+        transparent 25%, transparent 50%, 
+        #9932CC 50%, #9932CC 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+.progress-psyduck-5 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-psyduck-5 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-psyduck-5 { 	
+    background-color: #A0522D;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #F4A460 25%, 
+        transparent 25%, transparent 50%, 
+        #F4A460 50%, #F4A460 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-psyduck-6 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-psyduck-6 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-psyduck-6 { 	
+    background-color: #000080;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #7B68EE 25%, 
+        transparent 25%, transparent 50%, 
+        #7B68EE 50%, #7B68EE 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+/*BARRAS DE PIKACHU*/
+.progress-pikachu {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-pikachu {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-pikachu { 	
+    background-color: #118711;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #00FF00 25%, 
+        transparent 25%, transparent 50%, 
+        #00FF00 50%, #00FF00 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-pikachu-2 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-pikachu-2 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-pikachu-2 { 	
+    background-color: #8B0000;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #B22222 25%, 
+        transparent 25%, transparent 50%, 
+        #B22222 50%, #B22222 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+.progress-pikachu-3 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-pikachu-3 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-pikachu-3 { 	
+    background-color: #FFD700;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #DAA520 25%, 
+        transparent 25%, transparent 50%, 
+        #DAA520 50%, #DAA520 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-pikachu-4 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-pikachu-4 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-pikachu-4 { 	
+    background-color: #8B008B;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #9932CC 25%, 
+        transparent 25%, transparent 50%, 
+        #9932CC 50%, #9932CC 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-pikachu-5 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-pikachu-5 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-pikachu-5 { 	
+    background-color: #A0522D;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #F4A460 25%, 
+        transparent 25%, transparent 50%, 
+        #F4A460 50%, #F4A460 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-pikachu-6 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-pikachu-6 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-pikachu-6 { 	
+    background-color: #000080;   
+  width: 90%; 
+  background-image: linear-gradient(
+        45deg, #7B68EE 25%, 
+        transparent 25%, transparent 50%, 
+        #7B68EE 50%, #7B68EE 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b4 6s;
+}
+/*BARRAS DE SHINX*/
+.progress-shinx {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-shinx {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;       
+}
+.progress-striped .progress-bar-animated-shinx { 	
+    background-color: #118711;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #00FF00 25%, 
+        transparent 25%, transparent 50%, 
+        #00FF00 50%, #00FF00 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-shinx-2 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-shinx-2 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-shinx-2 { 	
+    background-color: #8B0000;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #B22222 25%, 
+        transparent 25%, transparent 50%, 
+        #B22222 50%, #B22222 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+.progress-shinx-3 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-shinx-3 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;    
+}
+.progress-striped .progress-bar-animated-shinx-3 { 	
+    background-color: #FFD700;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #DAA520 25%, 
+        transparent 25%, transparent 50%, 
+        #DAA520 50%, #DAA520 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+.progress-shinx-4 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-shinx-4 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;    
+}
+.progress-striped .progress-bar-animated-shinx-4 { 	
+    background-color: #8B008B;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #9932CC 25%, 
+        transparent 25%, transparent 50%, 
+        #9932CC 50%, #9932CC 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-shinx-5 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-shinx-5 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-shinx-5 { 	
+    background-color: #A0522D;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #F4A460 25%, 
+        transparent 25%, transparent 50%, 
+        #F4A460 50%, #F4A460 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+.progress-shinx-6 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-shinx-6 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-shinx-6 { 	
+    background-color: #000080;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #7B68EE 25%, 
+        transparent 25%, transparent 50%, 
+        #7B68EE 50%, #7B68EE 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+/*BARRAS DE GEODUDE*/
+.progress-geodude {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-geodude {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;    
+}
+.progress-striped .progress-bar-animated-geodude { 	
+    background-color: #118711;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #00FF00 25%, 
+        transparent 25%, transparent 50%, 
+        #00FF00 50%, #00FF00 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-geodude-2 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-geodude-2 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-geodude-2 { 	
+    background-color: #8B0000;   
+  width: 75%; 
+  background-image: linear-gradient(
+        45deg, #B22222 25%, 
+        transparent 25%, transparent 50%, 
+        #B22222 50%, #B22222 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b6 6s;
+}
+.progress-geodude-3 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-geodude-3 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;   
+}
+.progress-striped .progress-bar-animated-geodude-3 { 	
+    background-color: #FFD700;   
+  width: 90%; 
+  background-image: linear-gradient(
+        45deg, #DAA520 25%, 
+        transparent 25%, transparent 50%, 
+        #DAA520 50%, #DAA520 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b4 6s;
+}
+.progress-geodude-4 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-geodude-4 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;    
+}
+.progress-striped .progress-bar-animated-geodude-4 { 	
+    background-color: #8B008B;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #9932CC 25%, 
+        transparent 25%, transparent 50%, 
+        #9932CC 50%, #9932CC 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+.progress-geodude-5 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-geodude-5 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-geodude-5 { 	
+    background-color: #A0522D;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #F4A460 25%, 
+        transparent 25%, transparent 50%, 
+        #F4A460 50%, #F4A460 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+.progress-geodude-6 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-geodude-6 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-geodude-6 { 	
+    background-color: #000080;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #7B68EE 25%, 
+        transparent 25%, transparent 50%, 
+        #7B68EE 50%, #7B68EE 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+/*BARRAS DE DWEBBLE*/
+.progress-dwebble {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-dwebble {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-dwebble { 	
+    background-color: #118711;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #00FF00 25%, 
+        transparent 25%, transparent 50%, 
+        #00FF00 50%, #00FF00 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-dwebble-2 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-dwebble-2 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;    
+}
+.progress-striped .progress-bar-animated-dwebble-2 { 	
+    background-color: #8B0000;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #B22222 25%, 
+        transparent 25%, transparent 50%, 
+        #B22222 50%, #B22222 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+.progress-dwebble-3 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-dwebble-3 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-dwebble-3 { 	
+    background-color: #FFD700;   
+  width: 75%; 
+  background-image: linear-gradient(
+        45deg, #DAA520 25%, 
+        transparent 25%, transparent 50%, 
+        #DAA520 50%, #DAA520 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b6 6s;
+}
+.progress-dwebble-4 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-dwebble-4 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-dwebble-4 { 	
+    background-color: #8B008B;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #9932CC 25%, 
+        transparent 25%, transparent 50%, 
+        #9932CC 50%, #9932CC 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-dwebble-5 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-dwebble-5 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-dwebble-5 { 	
+    background-color: #A0522D;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #F4A460 25%, 
+        transparent 25%, transparent 50%, 
+        #F4A460 50%, #F4A460 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-dwebble-6 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-dwebble-6 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-dwebble-6 { 	
+    background-color: #000080;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #7B68EE 25%, 
+        transparent 25%, transparent 50%, 
+        #7B68EE 50%, #7B68EE 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+/*BARRAS DE RATTATA*/
+.progress-rattata {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-rattata {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-rattata { 	
+    background-color: #118711;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #00FF00 25%, 
+        transparent 25%, transparent 50%, 
+        #00FF00 50%, #00FF00 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+.progress-rattata-2 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-rattata-2 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-rattata-2 { 	
+    background-color: #8B0000;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #B22222 25%, 
+        transparent 25%, transparent 50%, 
+        #B22222 50%, #B22222 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+.progress-rattata-3 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-rattata-3 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-rattata-3 { 	
+    background-color: #FFD700;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #DAA520 25%, 
+        transparent 25%, transparent 50%, 
+        #DAA520 50%, #DAA520 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-rattata-4 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-rattata-4 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-rattata-4 { 	
+    background-color: #8B008B;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #9932CC 25%, 
+        transparent 25%, transparent 50%, 
+        #9932CC 50%, #9932CC 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+.progress-rattata-5 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-rattata-5 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-rattata-5 { 	
+    background-color: #A0522D;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #F4A460 25%, 
+        transparent 25%, transparent 50%, 
+        #F4A460 50%, #F4A460 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-rattata-6 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-rattata-6 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-rattata-6 { 	
+    background-color: #000080;   
+  width: 75%; 
+  background-image: linear-gradient(
+        45deg, #7B68EE 25%, 
+        transparent 25%, transparent 50%, 
+        #7B68EE 50%, #7B68EE 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b6 6s;
+}
+/*BARRAS DE PIDGEY*/
+.progress-pidgey {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-pidgey {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-pidgey { 	
+    background-color: #118711;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #00FF00 25%, 
+        transparent 25%, transparent 50%, 
+        #00FF00 50%, #00FF00 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-pidgey-2 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-pidgey-2 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-pidgey-2 { 	
+    background-color: #8B0000;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #B22222 25%, 
+        transparent 25%, transparent 50%, 
+        #B22222 50%, #B22222 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-pidgey-3 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-pidgey-3 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-pidgey-3 { 	
+    background-color: #FFD700;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #DAA520 25%, 
+        transparent 25%, transparent 50%, 
+        #DAA520 50%, #DAA520 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-pidgey-4 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-pidgey-4 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-pidgey-4 { 	
+    background-color: #8B008B;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #9932CC 25%, 
+        transparent 25%, transparent 50%, 
+        #9932CC 50%, #9932CC 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-pidgey-5 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-pidgey-5 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-pidgey-5 { 	
+    background-color: #A0522D;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #F4A460 25%, 
+        transparent 25%, transparent 50%, 
+        #F4A460 50%, #F4A460 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-pidgey-6 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-pidgey-6 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-pidgey-6 { 	
+    background-color: #000080;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #7B68EE 25%, 
+        transparent 25%, transparent 50%, 
+        #7B68EE 50%, #7B68EE 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+/*BARRRAS DE CHARMANDER*/
+.progress-charmander {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-charmander {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-charmander { 	
+    background-color: #118711;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #00FF00 25%, 
+        transparent 25%, transparent 50%, 
+        #00FF00 50%, #00FF00 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-charmander-2 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-charmander-2 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-charmander-2 { 	
+    background-color: #8B0000;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #B22222 25%, 
+        transparent 25%, transparent 50%, 
+        #B22222 50%, #B22222 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+.progress-charmander-3 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-charmander-3 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-charmander-3 { 	
+    background-color: #FFD700;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #DAA520 25%, 
+        transparent 25%, transparent 50%, 
+        #DAA520 50%, #DAA520 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-charmander-4 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-charmander-4 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-charmander-4 { 	
+    background-color: #8B008B;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #9932CC 25%, 
+        transparent 25%, transparent 50%, 
+        #9932CC 50%, #9932CC 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+.progress-charmander-5 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-charmander-5 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-charmander-5 { 	
+    background-color: #A0522D;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #F4A460 25%, 
+        transparent 25%, transparent 50%, 
+        #F4A460 50%, #F4A460 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-charmander-6 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-charmander-6 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-charmander-6 { 	
+    background-color: #000080;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #7B68EE 25%, 
+        transparent 25%, transparent 50%, 
+        #7B68EE 50%, #7B68EE 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+/*BARRAS DE GROWLITHE*/
+.progress-growlithe {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-growlithe {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-growlithe { 	
+    background-color: #118711;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #00FF00 25%, 
+        transparent 25%, transparent 50%, 
+        #00FF00 50%, #00FF00 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+.progress-growlithe-2 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-growlithe-2 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-growlithe-2 { 	
+    background-color: #8B0000;   
+  width: 75%; 
+  background-image: linear-gradient(
+        45deg, #B22222 25%, 
+        transparent 25%, transparent 50%, 
+        #B22222 50%, #B22222 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b6 6s;
+}
+.progress-growlithe-3 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-growlithe-3 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-growlithe-3 { 	
+    background-color: #FFD700;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #DAA520 25%, 
+        transparent 25%, transparent 50%, 
+        #DAA520 50%, #DAA520 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-growlithe-4 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-growlithe-4 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-growlithe-4 { 	
+    background-color: #8B008B;   
+  width: 75%; 
+  background-image: linear-gradient(
+        45deg, #9932CC 25%, 
+        transparent 25%, transparent 50%, 
+        #9932CC 50%, #9932CC 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b6 6s;
+}
+.progress-growlithe-5 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-growlithe-5 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-growlithe-5 { 	
+    background-color: #A0522D;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #F4A460 25%, 
+        transparent 25%, transparent 50%, 
+        #F4A460 50%, #F4A460 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-growlithe-6 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-growlithe-6 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-growlithe-6 { 	
+    background-color: #000080;   
+  width: 60%; 
+  background-image: linear-gradient(
+        45deg, #7B68EE 25%, 
+        transparent 25%, transparent 50%, 
+        #7B68EE 50%, #7B68EE 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b3 6s;
+}
+/*BARRAS DE CATERPIE*/
+.progress-caterpie {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-caterpie {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-caterpie { 	
+    background-color: #118711;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #00FF00 25%, 
+        transparent 25%, transparent 50%, 
+        #00FF00 50%, #00FF00 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-caterpie-2 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-caterpie-2 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-caterpie-2 { 	
+    background-color: #8B0000;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #B22222 25%, 
+        transparent 25%, transparent 50%, 
+        #B22222 50%, #B22222 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+.progress-caterpie-3 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-caterpie-3 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-caterpie-3 { 	
+    background-color: #FFD700;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #DAA520 25%, 
+        transparent 25%, transparent 50%, 
+        #DAA520 50%, #DAA520 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-caterpie-4 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-caterpie-4 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-caterpie-4 { 	
+    background-color: #8B008B;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #9932CC 25%, 
+        transparent 25%, transparent 50%, 
+        #9932CC 50%, #9932CC 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+.progress-caterpie-5 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-caterpie-5 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-caterpie-5 { 	
+    background-color: #A0522D;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #F4A460 25%, 
+        transparent 25%, transparent 50%, 
+        #F4A460 50%, #F4A460 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+.progress-caterpie-6 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-caterpie-6 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-caterpie-6 { 	
+    background-color: #000080;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #7B68EE 25%, 
+        transparent 25%, transparent 50%, 
+        #7B68EE 50%, #7B68EE 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+/*BARRAS DE WEEDLE*/
+.progress-weedle {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-weedle {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-weedle { 	
+    background-color: #118711;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #00FF00 25%, 
+        transparent 25%, transparent 50%, 
+        #00FF00 50%, #00FF00 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-weedle-2 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-weedle-2 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-weedle-2 { 	
+    background-color: #8B0000;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #B22222 25%, 
+        transparent 25%, transparent 50%, 
+        #B22222 50%, #B22222 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+}
+.progress-weedle-3 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-weedle-3 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-weedle-3 { 	
+    background-color: #FFD700;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #DAA520 25%, 
+        transparent 25%, transparent 50%, 
+        #DAA520 50%, #DAA520 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+.progress-weedle-4 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-weedle-4 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-weedle-4 { 	
+    background-color: #8B008B;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #9932CC 25%, 
+        transparent 25%, transparent 50%, 
+        #9932CC 50%, #9932CC 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+.progress-weedle-5 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-weedle-5 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;     
+}
+.progress-striped .progress-bar-animated-weedle-5 { 	
+    background-color: #A0522D;   
+  width: 30%; 
+  background-image: linear-gradient(
+        45deg, #F4A460 25%, 
+        transparent 25%, transparent 50%, 
+        #F4A460 50%, #F4A460 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b5 6s;
+}
+.progress-weedle-6 {
+    padding: 3px;
+    background: rgba(0, 0, 0, 0.25);
+    border-radius: 6px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.08);
+}
+.progress-bar-animated-weedle-6 {	
+    height: 10px;
+      background-color: #ee303c;  
+    border-radius: 4px; 
+    transition: 0.4s linear;      
+}
+.progress-striped .progress-bar-animated-weedle-6 { 	
+    background-color: #000080;   
+  width: 45%; 
+  background-image: linear-gradient(
+        45deg, #7B68EE 25%, 
+        transparent 25%, transparent 50%, 
+        #7B68EE 50%, #7B68EE 75%,
+        transparent 75%, transparent); 
+  animation: progressAnimationStrike-b2 6s;
+} 
   
